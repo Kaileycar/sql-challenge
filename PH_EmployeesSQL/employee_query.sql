@@ -13,7 +13,7 @@ where hire_date between '1986-01-01' and '1986-12-31';
 
 --List the manager of each department along with their department number, department name, 
 --employee number, last name, and first name.
-select m.emp_no, m.dept_no, d.dept_name, e.emp_no, e.first_name, e.last_name
+select m.emp_no, m.dept_no, d.dept_name, e.first_name, e.last_name
 from dept_manager m
 join employees e
 on m.emp_no = e.emp_no
